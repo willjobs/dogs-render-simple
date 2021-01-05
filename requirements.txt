@@ -10,8 +10,8 @@ pandas==1.1.5
 pillow~=7.2
 python-multipart==0.0.5
 starlette==0.13.6
-torch==1.7.0+cu101
-torchvision==0.8.1+cu101
+torch==1.7.0+cpu
+torchvision==0.8.1+cpu
 torchsummary==1.5.1          
 torchtext==0.3.1
 uvicorn==0.11.7
