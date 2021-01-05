@@ -13,6 +13,7 @@ from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
 fastai.torch_core.default_device(False)  # False = CPU
+fastai.torch_core.defaults.device = 'cpu'
 
 export_file_url = 'https://www.dropbox.com/s/h078f1ovgishtou/dogs_simple_resnet18_fastai_20210104_225053.pkl?dl=1'
 export_file_name = 'dogs_simple_resnet18_fastai_20210104_225053.pkl'
