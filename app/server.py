@@ -2,6 +2,7 @@ import aiohttp
 import asyncio
 import uvicorn
 import pathlib
+import fastai
 from fastai import *
 from fastai.vision import *
 from fastai.vision.all import *
