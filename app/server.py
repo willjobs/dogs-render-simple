@@ -15,8 +15,8 @@ from starlette.staticfiles import StaticFiles
 fastai.torch_core.default_device(False)  # False = CPU
 fastai.torch_core.defaults.device = 'cpu'
 
-export_file_url = 'https://www.dropbox.com/s/h078f1ovgishtou/dogs_simple_resnet18_fastai_20210104_225053.pkl?dl=1'
-export_file_name = 'dogs_simple_resnet18_fastai_20210104_225053.pkl'
+export_file_url = 'https://www.dropbox.com/s/q0njzm1ncj6te27/dogs_simple_resnet18_fastai_cpu_20210105_032543.pkl?dl=1'
+export_file_name = 'dogs_simple_resnet18_fastai_cpu_20210105_032543.pkl'
 
 classes = ['Affenpinscher', 'Afghan Hound', 'African Hunting Dog', 'Airedale', 'American Staffordshire Terrier', 'Appenzeller', 'Australian Terrier', 
            'Basenji', 'Basset', 'Beagle', 'Bedlington Terrier', 'Bernese Mountain Dog', 'Black-And-Tan Coonhound', 'Blenheim Spaniel', 'Bloodhound', 
