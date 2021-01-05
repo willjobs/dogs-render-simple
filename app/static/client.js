@@ -28,6 +28,8 @@ function analyze() {
   };
   xhr.onload = function(e) {
     if (this.readyState === 4) {
+      console.log('Response text=');
+      console.log(e.target.responseText);
       var response = JSON.parse(e.target.responseText);
       el("result-label").innerHTML = `Result = ${response["result"]}`;
     }
