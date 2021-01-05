@@ -13,7 +13,7 @@ from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
 fastai.torch_core.default_device(False)  # False = CPU
-fastai.torch_core.defaults.device = 'cpu'
+#fastai.torch_core.defaults.device = 'cpu'
 
 export_file_url = 'https://www.dropbox.com/s/q0njzm1ncj6te27/dogs_simple_resnet18_fastai_cpu_20210105_032543.pkl?dl=1'
 export_file_name = 'dogs_simple_resnet18_fastai_cpu_20210105_032543.pkl'
@@ -52,7 +52,7 @@ async def download_file(url, dest):
 async def setup_learner():
     await download_file(export_file_url, path / export_file_name)
     try:
-        learn = load_learner(path, export_file_name, cpu=True)
+        learn = load_learner(path, export_file_name)
         return learn
     except RuntimeError as e:
         if len(e.args) > 0 and 'CPU-only machine' in e.args[0]:
