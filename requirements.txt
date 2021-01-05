@@ -7,10 +7,10 @@ fastdtw==0.3.4
 fastprogress==1.0.0 
 pandas==1.1.5
 torch==1.6.0
-torchvision==1.7.0+cu101
+torchvision==1.7.0
 torchsummary==1.5.1          
 torchtext==0.3.1          
-torchvision==0.8.1+cu101    
+torchvision==0.8.1    
 numpy==1.19.4
 pillow~=7.2
 python-multipart==0.0.5
